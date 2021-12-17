@@ -1,12 +1,12 @@
 //
-//  MGame.swift
+//  Game.swift
 //  GuessWord
 //
 //  Created by Stanislav Lemeshaev on 07.12.2021.
 //  Copyright © 2021 slemeshaev. All rights reserved.
 //
 
-struct MGame {
+struct Game {
     
     // MARK: - Init
     init(hiddenWord: String, wrongMovesRemainder: Int) {
@@ -24,7 +24,7 @@ struct MGame {
         var wordToShow = String()
         
         for letter in hiddenWord {
-            if guessedLetters.contains(Character(letter.lowercased())) {
+            if guessedLetters.contains(Character(letter.lowercased())) || letter == "-" || letter == " " {
                 wordToShow += String(letter)
             } else {
                 wordToShow += "_"

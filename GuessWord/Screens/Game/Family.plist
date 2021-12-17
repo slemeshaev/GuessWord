@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>sister-in-law</string>
+	<string>brother-in-law</string>
+	<string>wife</string>
+	<string>uncle</string>
+	<string>son</string>
+	<string>sister</string>
+	<string>niece</string>
+	<string>newphew</string>
+	<string>grandfather</string>
+	<string>grandmother</string>
+	<string>daughter</string>
+	<string>cousin</string>
+	<string>brother</string>
+	<string>aunt</string>
+	<string>father</string>
+	<string>mother</string>
+</array>
+</plist>

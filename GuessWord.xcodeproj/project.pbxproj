@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		666CD0D3276BCA8A00879D54 /* Family.plist in Resources */ = {isa = PBXBuildFile; fileRef = 666CD0D2276BCA8A00879D54 /* Family.plist */; };
 		66BF8CDA275CE68300408F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CD9275CE68300408F0B /* AppDelegate.swift */; };
 		66BF8CDC275CE68300408F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CDB275CE68300408F0B /* SceneDelegate.swift */; };
-		66BF8CDE275CE68300408F0B /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CDD275CE68300408F0B /* GameController.swift */; };
-		66BF8CE1275CE68300408F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BF8CDF275CE68300408F0B /* Main.storyboard */; };
+		66BF8CDE275CE68300408F0B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CDD275CE68300408F0B /* GameViewController.swift */; };
+		66BF8CE1275CE68300408F0B /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BF8CDF275CE68300408F0B /* GameView.storyboard */; };
 		66BF8CE3275CE68500408F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BF8CE2275CE68500408F0B /* Assets.xcassets */; };
 		66BF8CE6275CE68500408F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BF8CE4275CE68500408F0B /* LaunchScreen.storyboard */; };
-		66EA22D4275FED9200EDE472 /* MGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA22D3275FED9200EDE472 /* MGame.swift */; };
+		66EA22D4275FED9200EDE472 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA22D3275FED9200EDE472 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		666CD0D2276BCA8A00879D54 /* Family.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Family.plist; sourceTree = "<group>"; };
 		66BF8CD6275CE68300408F0B /* GuessWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BF8CD9275CE68300408F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66BF8CDB275CE68300408F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66BF8CDD275CE68300408F0B /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		66BF8CE0275CE68300408F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66BF8CDD275CE68300408F0B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		66BF8CE0275CE68300408F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GameView.storyboard; sourceTree = "<group>"; };
 		66BF8CE2275CE68500408F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66BF8CE5275CE68500408F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66BF8CE7275CE68500408F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66EA22D3275FED9200EDE472 /* MGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGame.swift; sourceTree = "<group>"; };
+		66EA22D3275FED9200EDE472 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		66BF8CD8275CE68300408F0B /* GuessWord */ = {
 			isa = PBXGroup;
 			children = (
-				66BF8CD9275CE68300408F0B /* AppDelegate.swift */,
-				66BF8CDB275CE68300408F0B /* SceneDelegate.swift */,
-				66BF8CDD275CE68300408F0B /* GameController.swift */,
-				66EA22D3275FED9200EDE472 /* MGame.swift */,
-				66BF8CDF275CE68300408F0B /* Main.storyboard */,
-				66BF8CE2275CE68500408F0B /* Assets.xcassets */,
-				66BF8CE4275CE68500408F0B /* LaunchScreen.storyboard */,
-				66BF8CE7275CE68500408F0B /* Info.plist */,
+				66E3E756276D057B005F55D4 /* Screens */,
+				66E3E757276D0584005F55D4 /* Utilities */,
 			);
 			path = GuessWord;
+			sourceTree = "<group>";
+		};
+		66E3E756276D057B005F55D4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				66E3E759276D05E1005F55D4 /* Launch */,
+				66E3E758276D05B9005F55D4 /* Game */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		66E3E757276D0584005F55D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				66BF8CD9275CE68300408F0B /* AppDelegate.swift */,
+				66BF8CDB275CE68300408F0B /* SceneDelegate.swift */,
+				66BF8CE2275CE68500408F0B /* Assets.xcassets */,
+				66BF8CE7275CE68500408F0B /* Info.plist */,
+				66E3E75A276D0601005F55D4 /* Screenshots */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		66E3E758276D05B9005F55D4 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				66EA22D3275FED9200EDE472 /* Game.swift */,
+				66BF8CDD275CE68300408F0B /* GameViewController.swift */,
+				66BF8CDF275CE68300408F0B /* GameView.storyboard */,
+				666CD0D2276BCA8A00879D54 /* Family.plist */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		66E3E759276D05E1005F55D4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				66BF8CE4275CE68500408F0B /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		66E3E75A276D0601005F55D4 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666CD0D3276BCA8A00879D54 /* Family.plist in Resources */,
 				66BF8CE6275CE68500408F0B /* LaunchScreen.storyboard in Resources */,
 				66BF8CE3275CE68500408F0B /* Assets.xcassets in Resources */,
-				66BF8CE1275CE68300408F0B /* Main.storyboard in Resources */,
+				66BF8CE1275CE68300408F0B /* GameView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,22 +186,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66BF8CDE275CE68300408F0B /* GameController.swift in Sources */,
+				66BF8CDE275CE68300408F0B /* GameViewController.swift in Sources */,
 				66BF8CDA275CE68300408F0B /* AppDelegate.swift in Sources */,
 				66BF8CDC275CE68300408F0B /* SceneDelegate.swift in Sources */,
-				66EA22D4275FED9200EDE472 /* MGame.swift in Sources */,
+				66EA22D4275FED9200EDE472 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		66BF8CDF275CE68300408F0B /* Main.storyboard */ = {
+		66BF8CDF275CE68300408F0B /* GameView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				66BF8CE0275CE68300408F0B /* Base */,
 			);
-			name = Main.storyboard;
+			name = GameView.storyboard;
 			sourceTree = "<group>";
 		};
 		66BF8CE4275CE68500408F0B /* LaunchScreen.storyboard */ = {
@@ -296,11 +340,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessWord/Info.plist;
+				INFOPLIST_FILE = GuessWord/Utilities/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Guess Word";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -326,11 +370,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessWord/Info.plist;
+				INFOPLIST_FILE = GuessWord/Utilities/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Guess Word";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
