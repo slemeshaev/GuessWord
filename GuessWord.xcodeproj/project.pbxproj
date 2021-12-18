@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		666CD0D3276BCA8A00879D54 /* Family.plist in Resources */ = {isa = PBXBuildFile; fileRef = 666CD0D2276BCA8A00879D54 /* Family.plist */; };
+		66951D88276E5ED800DA26D7 /* Screenshot_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 66951D86276E5ED800DA26D7 /* Screenshot_02.png */; };
+		66951D89276E5ED800DA26D7 /* Screenshot_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 66951D87276E5ED800DA26D7 /* Screenshot_01.png */; };
 		66BF8CDA275CE68300408F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CD9275CE68300408F0B /* AppDelegate.swift */; };
 		66BF8CDC275CE68300408F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CDB275CE68300408F0B /* SceneDelegate.swift */; };
 		66BF8CDE275CE68300408F0B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF8CDD275CE68300408F0B /* GameViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		666CD0D2276BCA8A00879D54 /* Family.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Family.plist; sourceTree = "<group>"; };
+		66951D86276E5ED800DA26D7 /* Screenshot_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_02.png; sourceTree = "<group>"; };
+		66951D87276E5ED800DA26D7 /* Screenshot_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_01.png; sourceTree = "<group>"; };
 		66BF8CD6275CE68300408F0B /* GuessWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BF8CD9275CE68300408F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66BF8CDB275CE68300408F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		66E3E75A276D0601005F55D4 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				66951D87276E5ED800DA26D7 /* Screenshot_01.png */,
+				66951D86276E5ED800DA26D7 /* Screenshot_02.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 			files = (
 				666CD0D3276BCA8A00879D54 /* Family.plist in Resources */,
 				66BF8CE6275CE68500408F0B /* LaunchScreen.storyboard in Resources */,
+				66951D89276E5ED800DA26D7 /* Screenshot_01.png in Resources */,
 				66BF8CE3275CE68500408F0B /* Assets.xcassets in Resources */,
+				66951D88276E5ED800DA26D7 /* Screenshot_02.png in Resources */,
 				66BF8CE1275CE68300408F0B /* GameView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

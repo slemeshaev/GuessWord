@@ -35,7 +35,7 @@ class GameViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        listOfWords = loadWordList(named: "Family")
+        listOfWords = loadWordList(from: "Family")
         setupGame()
     }
     
@@ -99,8 +99,8 @@ class GameViewController: UIViewController {
         scoreLabel.text = "Winning streak: \(totalWins), losses: \(totalLosses)"
     }
     
-    private func loadWordList(named: String) -> [String] {
-        let plistURL = Bundle.main.url(forResource: named, withExtension: "plist")
+    private func loadWordList(from list: String) -> [String] {
+        let plistURL = Bundle.main.url(forResource: list, withExtension: "plist")
         
         guard let plistURL = plistURL else {
             return []
